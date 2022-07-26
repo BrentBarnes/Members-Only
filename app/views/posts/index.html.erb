@@ -1,0 +1,31 @@
+
+<% if @posts.nil? && !user_signed_in? %>
+  <div class="m-5">
+    <h1>Posts are empty!</h1>
+    <p>Sign in to create a new post.</p>
+    <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary" %>
+  </div>
+<% elsif @posts.nil? && user_signed_in? %>
+  <div class="m-5">
+    <h1>Posts are empty!</h1>
+    <p>Make the first post!</p>
+    <%= link_to "New Post", new_post_path, class: "btn btn-primary" %>
+  </div>
+<% else %>
+  <div class="p-4">
+    <h1 class="pb-4">Club Feed</h1>
+      <% @posts.each do |post|%>
+        <div class="flex-column pb-4 w-50">
+          <div class="card-body">
+            <% if user_signed_in? %>
+              <%= content_tag(:div, post.user.email, class: "text-info") %>
+            <% else %>
+              <div class="text-warning"><%= link_to "Sign in", new_user_session_path, class: "text-warning" %> to see who wrote this secret.</div>
+            <%end %>
+            <%= content_tag(:div, post.title, class: "fw-bold fs-5 text") %>
+            <%= content_tag(:div, post.body, class: "") %>
+          </div>
+        </div>
+      <% end %>
+  </div>
+  <% end %>
