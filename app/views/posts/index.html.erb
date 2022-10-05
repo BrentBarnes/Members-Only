@@ -20,7 +20,7 @@
             <% if user_signed_in? %>
               <%= content_tag(:div, post.user.email, class: "text-info") %>
             <% else %>
-              <div class="text-warning"><%= link_to "Sign in", new_user_session_path, class: "text-warning" %> to see who wrote this secret.</div>
+              <div class="text-danger"><%= link_to "Sign in", new_user_session_path, class: "text-danger" %> to see who wrote this secret.</div>
             <%end %>
             <%= content_tag(:div, post.title, class: "fw-bold fs-5 text") %>
             <%= content_tag(:div, post.body, class: "") %>
