@@ -23,15 +23,15 @@ Email: <strong>odin@example.com</strong>Password: <strong>password</strong></p>
 <p float = 'left' >
   <figure>
     <figcaption>Home Page (posts#index)</figcaption>
-    <img src="screenshots/home.png" alt="Home Page (posts#index)" width="600" height="400">
+    <img src="screenshots/home.png" alt="Home Page (posts#index)" width="600" height="350">
   </figure>
   <figure>
     <figcaption>New Post View</figcaption>
-    <img src="screenshots/new_post.png" alt="New Post View" width="600" height="400">
+    <img src="screenshots/new_post.png" alt="New Post View" width="600" height="350">
   </figure>
   <figure>
     <figcaption>Secret Poster Revealed After Loggin In</figcaption>
-    <img src="screenshots/secret.png" alt="Secret Poster Revealed After Loggin In" width="600" height="400">
+    <img src="screenshots/secret.png" alt="Secret Poster Revealed After Loggin In" width="600" height="200">
   </figure>
   <figure>
     <figcaption>Log In View</figcaption>
