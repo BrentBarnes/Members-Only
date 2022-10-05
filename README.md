@@ -31,7 +31,7 @@ Email: <strong>odin@example.com</strong>Password: <strong>password</strong></p>
   </figure>
   <figure>
     <figcaption>Secret Poster Revealed After Loggin In</figcaption>
-    <img src="screenshots/secret.png" alt="Secret Poster Revealed After Loggin In" width="600" height="200">
+    <img src="screenshots/secret.png" alt="Secret Poster Revealed After Loggin In" width="600" height="150">
   </figure>
   <figure>
     <figcaption>Log In View</figcaption>
